@@ -81,3 +81,45 @@ ul {
         margin-top: 3px;
     }
 }
+
+@media print {
+    button {
+        display: none;
+    }
+}
+
+@media print {
+
+    body {
+        background: white;
+    }
+
+    .container {
+        box-shadow: none;
+        margin: 0;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    p, li {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    section {
+        margin-bottom: 10px;
+    }
+}
+
+@page {
+    size: A4 portrait;
+    margin: 10mm;
+}
